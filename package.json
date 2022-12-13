@@ -1,0 +1,11 @@
+{
+    "name": "thesis",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "start": "next start",
+      "install-ust-ticketing": "cd ust-ticketing && yarn && yarn dev",
+      "install-ticketing-backend": "cd ticketing-backend && yarn && npm start",
+      "heroku-postbuild": "npm run install-ust-ticketing && npm run install-ticketing-backend"
+    }
+}
